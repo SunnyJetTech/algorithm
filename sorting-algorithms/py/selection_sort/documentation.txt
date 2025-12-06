@@ -1,0 +1,149 @@
+Selection Sort – Algorithm Documentation
+
+Project Overview
+
+This document explains the Selection Sort algorithm — a simple, comparison-based sorting technique widely used for educational purposes. Selection Sort emphasizes step-by-step logical reasoning in ordering elements, making it an excellent tool for understanding basic algorithmic concepts. The focus here is on clarity, reasoning, and learning, rather than high-performance use in production systems.
+
+Purpose of This Document
+
+The purpose of this document is to:
+
+Explain how Selection Sort works internally
+
+Clarify why each step of the algorithm exists
+
+Help learners understand time and space complexity
+
+Provide professional-level documentation suitable for public repositories
+
+
+Aim
+
+To provide a clear, structured explanation of the Selection Sort algorithm so that readers can understand both its logic and practical limitations.
+
+
+Objectives
+
+After reading this document, readers should be able to:
+
+Describe how Selection Sort orders a list
+
+Explain why the minimum element is repeatedly selected and swapped
+
+Understand the algorithm’s efficiency characteristics
+
+Recognize when Selection Sort is and is not appropriate to use
+
+
+How the Algorithm Works (Conceptual Overview)
+
+Selection Sort repeatedly selects the smallest element from the unsorted portion of the list and places it in the correct position in the sorted portion.
+
+The sorted portion grows from the beginning of the list.
+
+The unsorted portion shrinks as elements are placed in order.
+
+This process continues until all elements are sorted.
+
+Think of it like repeatedly finding the smallest card in a deck and placing it at the start.
+
+
+Detailed Process Explanation
+
+Initial Check:
+The algorithm examines the length of the list. Empty or single-element lists are already sorted, so no processing is required.
+
+Iteration Over Elements:
+Start from the first element and iterate through the list. Each iteration identifies the minimum element in the unsorted portion.
+
+Select Minimum Element:
+Temporarily store the index of the current minimum element as min_idx.
+
+Compare and Update:
+Compare all remaining unsorted elements with the current minimum. If a smaller element is found, update min_idx accordingly.
+
+Swap Minimum into Place:
+Swap the element at min_idx with the first element of the unsorted portion. This extends the sorted portion by one element.
+
+Repeat:
+Steps 2–5 are repeated until the entire list is sorted.
+
+
+Why Each Step Is Necessary
+
+Initial size check prevents unnecessary work for trivial cases.
+
+Iterating through the unsorted portion ensures all elements are considered.
+
+Tracking the minimum element avoids overwriting values prematurely.
+
+Comparisons and swaps move the smallest element into its correct position.
+
+Repeating the process guarantees the list becomes fully sorted.
+
+Performance Characteristics
+
+
+Time Complexity:
+
+Best Case: O(n²) – even sorted lists require comparisons
+
+Average Case: O(n²)
+
+Worst Case: O(n²) – reverse-sorted lists
+
+Space Complexity:
+
+O(1) — operates in-place without requiring additional memory
+
+
+Strengths
+
+Simple and intuitive to implement
+
+Works in-place, so minimal memory overhead
+
+Demonstrates core sorting logic clearly
+
+Deterministic and stable for unique elements
+
+
+Limitations
+
+Inefficient for large datasets due to quadratic time complexity
+
+Slower than modern algorithms like Merge Sort or Quick Sort
+
+Not adaptive — performs the same number of comparisons even if the list is already sorted
+
+Not suitable for parallel processing
+
+
+Real-World Use Cases
+
+Selection Sort is primarily used in:
+
+Teaching and learning environments
+
+Algorithm visualization tools
+
+Sorting small datasets
+
+
+Interview preparation for basic algorithm questions
+
+It is rarely used in production-level large-scale sorting.
+
+
+Contribution Notes
+
+This documentation is open for improvements.
+Readers are encouraged to contribute:
+
+Clearer explanations
+
+Visual aids and diagrams
+
+Alternative algorithmic insights
+
+Notes on performance optimizations

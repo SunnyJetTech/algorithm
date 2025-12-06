@@ -1,16 +1,23 @@
-def insert(arr: list[int]):
-    if len(arr) <= 1: return arr
+def insertion_sort(arr: list[int]) -> None:
+    if len(arr) <= 1: 
+        return
     
-    for element in range(1, len(arr)):
-        key = arr[element]
-        Prev_element = element - 1
+    for index in range(1, len(arr)):
+        key = arr[index]
+        prev_index = index - 1
         
-        while Prev_element >= 0 and key < arr[Prev_element]:
-            arr[Prev_element + 1] = arr[Prev_element]
-            Prev_element -= 1
-        arr[Prev_element + 1] = key
-
+        while prev_index >= 0 and key < arr[prev_index]:
+            arr[prev_index + 1] = arr[prev_index]
+            prev_index -= 1
+            
+        arr[prev_index + 1] = key
+        
 if __name__ == "__main__":
     arr = [12, 11, 13, 5, 6]
-    insert(arr)
+    insertion_sort(arr)
     print(arr)
+        
+        
+        
+    
+    
