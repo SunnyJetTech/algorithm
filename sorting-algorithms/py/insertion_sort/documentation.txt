@@ -1,0 +1,143 @@
+Insertion Sort – Algorithm Documentation
+
+
+Project Overview
+
+
+This document explains the Insertion Sort algorithm — a simple, comparison-based sorting technique commonly used for educational purposes and to introduce core algorithmic thinking. The focus of this documentation is on clarity, reasoning, and learning, rather than production-level performance.
+
+Purpose of This Document
+
+
+The purpose of this document is to:
+
+Explain how Insertion Sort works internally
+
+Clarify why each step of the algorithm exists
+
+Help learners understand time and space complexity
+
+Provide professional-level written documentation suitable for public repositories
+
+
+Aim
+
+To provide a clear, structured explanation of the Insertion Sort algorithm so that readers can understand both its logic and practical limitations.
+
+
+Objectives
+
+After reading this document, readers should be able to:
+
+Describe how Insertion Sort orders a list
+
+Explain the reason elements are shifted during insertion
+
+Understand how the algorithm efficiently handles nearly-sorted data
+
+Recognize when Insertion Sort is and is not appropriate to use
+
+
+How the Algorithm Works (Conceptual Overview)
+
+Insertion Sort builds a sorted portion of the list one element at a time. Each element from the unsorted portion is picked and inserted into its correct position in the already sorted portion. The sorted portion grows incrementally, while the remaining unsorted portion shrinks.
+
+The process repeats until:
+
+All elements have been inserted into the correct positions, or
+
+The entire list is fully sorted
+
+This approach is similar to how people often sort playing cards in their hands.
+
+Detailed Process Explanation
+
+
+Initial Check:
+The algorithm first checks whether the list requires sorting (empty or single-element lists do not).
+
+
+Iteration Over Elements:
+The algorithm starts from the second element and iterates through the list, treating elements before the current one as already sorted.
+
+Select Key Element:
+The current element is temporarily stored as the "key" to be inserted into the sorted portion.
+
+Compare and Shift:
+Elements in the sorted portion are compared with the key. If an element is larger than the key, it is shifted one position to the right to make space.
+
+Insert Key Element:
+Once the correct position is found, the key is placed in the sorted portion, maintaining order.
+
+Repeat:
+Steps 2–5 are repeated for each element until the entire list is sorted.
+
+
+Why Each Step Is Necessary
+
+Initial size check prevents unnecessary processing for trivial lists.
+
+Iteration through the list ensures that each element is considered for insertion.
+
+Storing the key element allows shifting without overwriting values.
+
+Comparisons and shifts move larger elements to make room for the key.
+
+Insertion of the key maintains the sorted order of the processed portion.
+
+Performance Characteristics
+
+
+Time Complexity:
+
+Best Case (already sorted): O(n)
+
+Average Case: O(n²)
+
+Worst Case (reverse-sorted): O(n²)
+
+
+Space Complexity:
+
+O(1) — operates in-place without requiring additional memory
+
+
+Strengths
+
+Easy to understand and implement
+
+Stable — maintains the relative order of equal elements
+
+Efficient for small or nearly-sorted datasets
+
+Demonstrates fundamental sorting logic clearly
+
+
+Limitations
+
+Inefficient for large datasets due to quadratic time complexity
+
+Slower than modern sorting algorithms such as Quick Sort or Merge Sort
+
+Not suitable for parallel processing
+
+
+Real-World Use Cases
+
+Insertion Sort is mainly used in:
+
+Teaching and learning environments
+
+Algorithm visualization tools
+
+Sorting small or nearly-sorted datasets
+
+Interview preparation for basic algorithm questions
+
+It is rarely used in production systems for large-scale sorting.
+
+
+Contribution Notes
+
+This documentation is open for improvements.
+Readers are encouraged to contribute clearer explanations, visual aids, alternative algorithmic insights, or performance notes.
