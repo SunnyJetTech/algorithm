@@ -1,0 +1,115 @@
+Bubble Sort – Algorithm Documentation
+
+Project Overview
+
+This document explains the Bubble Sort algorithm — a simple, comparison-based sorting technique commonly used for educational 
+purposes and to introduce core algorithmic thinking. The focus of this documentation is on clarity, reasoning, and learning, rather than production-level performance.
+
+Purpose of This Document
+
+The purpose of this document is to:
+
+Explain how Bubble Sort works internally
+
+Clarify why each step of the algorithm exists
+
+Help learners understand time and space complexity
+
+Provide professional-level written documentation suitable for public repositories
+
+
+Aim
+
+To provide a clear, structured explanation of the Bubble Sort algorithm so that readers can understand both its logic and practical limitations.
+
+
+Objectives
+
+After reading this document, readers should be able to:
+
+Describe how Bubble Sort orders a list
+
+Explain the reason swaps occur
+
+Understand how early termination improves performance
+
+Recognize when Bubble Sort is and is not appropriate to use
+
+How the Algorithm Works (Conceptual Overview)
+
+Bubble Sort repeatedly compares adjacent elements in a list and swaps them if they are in the wrong order. With every complete pass, the largest unsorted value moves to its correct position, much like a bubble rising to the surface.
+
+The process repeats until:
+
+The list becomes completely sorted, or
+
+A full pass occurs with no swaps, indicating the list is already sorted
+
+Detailed Process Explanation
+
+The algorithm first checks whether the list requires sorting (empty or single-element lists do not).
+
+It performs repeated passes through the list.
+
+During each pass, neighboring elements are compared.
+
+If two elements are found in the wrong order, they are swapped.
+
+The algorithm stops early if a full pass occurs without any swap.
+
+Why Each Step Is Necessary
+
+Initial size check prevents unnecessary processing.
+
+Repeated passes ensure proper positioning of elements.
+
+Pairwise comparison detects misplaced values.
+
+Swapping corrects ordering errors.
+
+Early termination improves performance on nearly-sorted data.
+
+Performance Characteristics
+
+Time Complexity:
+
+Best Case: O(n)
+
+Average Case: O(n²)
+
+Worst Case: O(n²)
+
+Space Complexity:
+
+O(1) — operates in-place without requiring additional memory
+
+Strengths
+
+Easy to understand and implement
+
+Useful for educational and demonstration purposes
+
+Shows core principles of algorithm design clearly
+
+Limitations
+
+Inefficient for large data sets
+
+Slower than modern sorting algorithms such as Quick Sort or Merge Sort
+
+Real-World Use Cases
+
+Bubble Sort is mainly used in:
+
+Teaching and learning environments
+
+Algorithm visualization tools
+
+Interview preparation for basic algorithm questions
+
+It is rarely used in production systems.
+
+Contribution Notes
+
+This documentation is open for improvements.
+Readers are encouraged to contribute clearer explanations, visual aids, or performance notes.
